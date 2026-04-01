@@ -1,8 +1,6 @@
 #!/bin/bash
 
 # tidy_bot.sh - Automated Disk Cleanup Script
-# Role: Senior Linux Systems Administrator
-# Description: Automates cleanup of package caches, logs, temp files, and Docker assets.
 
 # Configuration
 THRESHOLD=${THRESHOLD:-85}
