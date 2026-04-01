@@ -1,10 +1,10 @@
-# 🧹 Tidy Bot: Automated Disk Cleanup Script
+# Tidy Bot: Automated Disk Cleanup Script
 
 A robust Bash script designed for Senior Linux Systems Administrators to automate disk maintenance on Debian/Zorin and Archcraft/Arch systems.
 
 [![ShellCheck: Passed](https://img.shields.io/badge/ShellCheck-Passed-brightgreen)](https://www.shellcheck.net/)
 
-## 🚀 Features
+## Features
 - **Smart Threshold Check**: Only executes cleanup if the root partition usage exceeds a set percentage (default: 85%).
 - **Cross-Distro Support**: Detects and uses `apt-get clean` or `pacman -Sc`.
 - **Log Management**: Targets rotated logs (`.gz`, `.1`) older than 30 days in `/var/log`.
@@ -15,7 +15,7 @@ A robust Bash script designed for Senior Linux Systems Administrators to automat
 
 ---
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### 1. Installation
 1. Download or create the script:
@@ -35,7 +35,7 @@ sudo DRY_RUN=true /usr/local/bin/tidy_bot.sh
 
 ---
 
-## ⏰ Automation with Cron
+## Automation with Cron
 
 To set this script to run automatically every night at midnight, follow these steps:
 
@@ -56,7 +56,7 @@ To set this script to run automatically every night at midnight, follow these st
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 You can override the defaults without editing the script by setting environment variables in the crontab or shell:
 
 ```bash
@@ -64,7 +64,7 @@ You can override the defaults without editing the script by setting environment 
 sudo THRESHOLD=70 /usr/local/bin/tidy_bot.sh
 ```
 
-## 📜 Logs
+## Logs
 Monitor your cleanup history anytime:
 ```bash
 tail -f /var/log/tidy_bot.log
